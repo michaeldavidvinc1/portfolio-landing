@@ -5,64 +5,52 @@ import ProjectCard from "@/components/ProjectCard";
 
 const projectData = [
     {
-        image: '/work/3.png',
-        category: 'react js',
-        name: 'Nexa Website',
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, corrupti.',
-        link: '/',
-        github: '/'
-    },
-    {
-        image: '/work/3.png',
-        category: 'react js',
-        name: 'Nexa Website',
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, corrupti.',
-        link: '/',
-        github: '/'
-    },
-    {
-        image: '/work/4.png',
-        category: 'fullstack',
-        name: 'Evolve Website',
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, corrupti.',
-        link: '/',
-        github: '/'
-    },
-    {
-        image: '/work/1.png',
-        category: 'react js',
-        name: 'Sela Website',
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, corrupti.',
-        link: '/',
-        github: '/'
-    },
-    {
-        image: '/work/2.png',
+        image: '/project/airbnb-clone.png',
         category: 'next js',
-        name: 'Oping Website',
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, corrupti.',
-        link: '/',
-        github: '/'
+        name: 'Stay Sync',
+        description: 'Next JS, MongoDB, Cloudinary, Typescript',
+        link: 'https://staysync-ashen.vercel.app',
+        github: 'https://github.com/michaeldavidvinc1/airbnb-clone',
+        status: 'Online'
     },
     {
-        image: '/work/2.png',
+        image: '/project/messanger-clone.png',
         category: 'next js',
-        name: 'Oping Website',
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, corrupti.',
-        link: '/',
-        github: '/'
+        name: 'ChatterBox',
+        description: 'Next JS, MongoDB, Cloudinary, Typescript, Pusher',
+        link: 'https://chatterbox-sable.vercel.app/',
+        github: 'https://github.com/michaeldavidvinc1/messager-clone',
+        status: 'Online'
     },
     {
-        image: '/work/2.png',
-        category: 'next js',
-        name: 'Oping Website',
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, corrupti.',
-        link: '/',
-        github: '/'
+        image: '/project/thread-clone.png',
+        category: 'react js',
+        name: 'Thread Clone',
+        description: 'React JS, Node JS, MongoDb, Express Js',
+        link: '',
+        github: 'https://github.com/michaeldavidvinc1/thread-clone-frontend',
+        status: 'Offline'
     },
-];
+    {
+        image: '/project/estateease.png',
+        category: 'react js',
+        name: 'Estate Ease',
+        description: 'React JS, Node JS, MongoDb, Express Js',
+        link: '',
+        github: 'https://github.com/michaeldavidvinc1/estate-app-frontend',
+        status: 'Offline'
+    },
+    {
+        image: '/project/librasync.png',
+        category: 'laravel',
+        name: 'LibraSync',
+        description: 'Laravel, Livewire, Mysql',
+        link: '',
+        github: 'https://github.com/michaeldavidvinc1/library-laravel-livewire',
+        status: 'Offline'
+    },
+]
 
-// remove category duplicates
 const uniqueCategories = [
     'all projects', ...new Set(projectData.map((item) => item.category))
 ]

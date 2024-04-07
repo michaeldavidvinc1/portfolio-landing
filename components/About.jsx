@@ -10,10 +10,6 @@ const infoData = [
         text: 'Michael David Vinc'
     },
     {
-        icon: <PhoneCall size={20} />,
-        text: '+62812312738'
-    },
-    {
         icon: <MailIcon size={20} />,
         text: 'michaeldavidvinc3006@gmail.com'
     },
@@ -25,26 +21,12 @@ const infoData = [
         icon: <GraduationCap size={20} />,
         text: 'Bachelor Technology Information'
     },
-    {
-        icon: <HomeIcon size={20} />,
-        text: '213126327'
-    },
 ];
 
 const qualificationData = [
     {
         title: 'education',
         data: [
-            {
-                university: "STMIK Amik Riau",
-                qualification: "Bachelor of Technology Information",
-                years: '2018 - 2022'
-            },
-            {
-                university: "STMIK Amik Riau",
-                qualification: "Bachelor of Technology Information",
-                years: '2018 - 2022'
-            },
             {
                 university: "STMIK Amik Riau",
                 qualification: "Bachelor of Technology Information",
@@ -58,17 +40,12 @@ const qualificationData = [
             {
                 company: "Murni Teguh Memorial Hospital",
                 role: "Junior Backend Developer",
-                years: '2018 - 2022'
+                years: 'Sept 2022 - Jan 2023'
             },
             {
-                company: "Murni Teguh Memorial Hospital",
-                role: "Junior Backend Developer",
-                years: '2018 - 2022'
-            },
-            {
-                company: "Murni Teguh Memorial Hospital",
-                role: "Junior Backend Developer",
-                years: '2018 - 2022'
+                company: "APRIL Group",
+                role: "Full Stack Developer",
+                years: 'Feb 2023 -  Oct 2023'
             },
         ]
     }
@@ -104,9 +81,6 @@ const skillData = [
             {
                 imgPath: '/about/notion.svg'
             },
-            {
-                imgPath: '/about/wordpress.svg'
-            },
         ]
     }
 ]
@@ -122,7 +96,9 @@ const About = () => {
                 <div className="flex flex-col xl:flex-row">
                     {/* image */}
                     <div className="relative flex-1 hidden xl:flex">
-                        <DevImg containerStyles='bg-about-shape_light dark:bg-about-shape_dark w-[505px] h-[505px] bg-no-repeat relative' imgSrc='/about/developer.png' />
+                        <div className="w-[510px] h-[462px] bg-no-repeat relative">
+                            <Image src="/me.jpg" width={505} height={505} className="rounded-lg opacity-90" />
+                        </div>
                     </div>
                     {/* tabs */}
                     <div className="flex-1">
@@ -135,8 +111,8 @@ const About = () => {
                             <div className="mt-12 text-lg xl:mt-8">
                                 <TabsContent value='personal'>
                                     <div className="text-center xl:text-left">
-                                        <h3 className='mb-4 h3'>Unmatched Service Quality for Over 10 Years</h3>
-                                        <p className="max-w-xl mx-auto subtitle xl:mx-0">I specialize in crafting intuitive website with cutting-edge technology, delivering dynamic and engaging user experiences.</p>
+                                        <h3 className='mb-4 h3'>Crafting Digital Artistry</h3>
+                                        <p className="max-w-xl mx-auto subtitle xl:mx-0">As an experienced full-stack developer, I transform ideas into captivating digital creations. Blending technical prowess with aesthetic flair, I craft engaging and functional user experiences. With a spirit of innovation and a keen eye for detail, every project is undertaken with a commitment to delivering excellence.</p>
                                         {/* icons */}
                                         <div className="grid gap-4 mb-12 xl:grid-cols-2">
                                             {infoData.map((item, index) => {
